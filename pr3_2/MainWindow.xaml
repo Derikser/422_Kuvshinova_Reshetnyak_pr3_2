@@ -1,0 +1,23 @@
+﻿<Window x:Class="pr3_2.MainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вычисление оптимального веса человека" Height="280" Width="509" Icon="/i.png">
+    <Grid>
+        <Label Content="Рост в сантиметрах:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox Name="HeightInput" Width="100" HorizontalAlignment="Left" Margin="150,12,0,211"/>
+
+        <Label Content="Вес в килограммах:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+        <TextBox Name="WeightInput" Width="100" HorizontalAlignment="Left" Margin="150,45,0,178"/>
+
+        <GroupBox Header="Пол" HorizontalAlignment="Right" Width="120" Height="80" Margin="0,22,101,162">
+            <StackPanel>
+                <RadioButton Name="MaleRadio" Content="Мужчина"/>
+                <RadioButton Name="FemaleRadio" Content="Женщина"/>
+            </StackPanel>
+        </GroupBox>
+
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="10,80,0,132" Width="117" Click="CalculateWeight"/>
+
+        <Label Name="ResultLabel" Content="" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,120,0,0" Width="380"/>
+    </Grid>
+</Window>
